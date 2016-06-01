@@ -1,1 +1,42 @@
-footer
+footer.footer
+  .footer__top
+    .container
+      .footer__description Want to participate?
+        a.button.button_yes(href='') Yes
+  .footer__bottom
+    .container
+      .footer__social
+        a.logo(href='/')
+          img.logo__img(src='img/logo.png', alt='Academic adventures')
+        .social
+          ul.social__list
+            - var socials = ['fb', 'vk', 'twitter']
+            each social in socials
+              li.social__list-item
+                a.social__link(class="social__link_#{social}", href='//#{social}.com', target="_blank") #{social}
+      .footer__info
+        .footer__col
+          .footer__title About Us
+          .footer__text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus
+        .footer__col
+          .footer__title Get in touch
+          .footer__text
+            address.footer__address 84 Benson Cove Oakland, Maine 04963 USA
+            a.footer__link(href="tel:+12074654622") +1.2074654622
+            a.footer__link(href="mailto: youremail@gmail.com") youremail@gmail.com
+        .footer__col
+          .footer__title Ask a question
+          .footer__text
+            form.form.form_footer(method='posr', action='')
+              .form__group
+                label.form__label(for='name') Name
+                input.form__field(type='text', name='name', id='name')
+              .form__group
+                label.form__label(for='email') E-mail
+                input.form__field(type='email', name='email', id='email')
+              .form__group
+                label.form__label(for='message') Message
+                textarea.form__textarea.form__field(name='message', id='message')
+              .form__group.form__group_buttons
+                button.button.button_reset(type="reset") Clean
+                button.button.button_submit(type="submit") Submit

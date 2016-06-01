@@ -1,4 +1,4 @@
-# Hello boilerpalte
+# Hello boilerplate
 
 ```sh
 $ npm i 

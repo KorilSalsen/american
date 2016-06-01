@@ -1,1 +1,14 @@
-header
+header.header
+  .header__top
+    .container
+      a.logo(href='/')
+        img.logo__img(src='img/logo.png', alt='Academic adventures')
+      menu.menu
+        ul.menu__list
+          - var elements = ['Academics tours', 'English courses', 'Stay at home']
+          each element in elements
+            li.menu__list-item
+              a.link(rel="stylesheet" href="") #{element}
+  .header__bottom.header__bottom_students
+    .container
+      h1.header__description Your future is waiting at Academic Adventures USA
