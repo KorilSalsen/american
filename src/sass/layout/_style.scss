@@ -20,6 +20,7 @@ body, html {
     text-align: justify;
     font-size: 0;
     vertical-align: middle;
+    text-justify: distribute;
 
     &:after {
       display: inline-block;
@@ -105,6 +106,7 @@ body, html {
   &__list {
     font-size: 0;
     text-align: justify;
+    text-justify: distribute;
 
     &:after {
       display: inline-block;
@@ -239,7 +241,7 @@ body, html {
   }
 
   &_rewiews {
-    margin-bottom: 68px;
+    margin-bottom: 78px;
   }
 
   &_popup {
@@ -260,6 +262,7 @@ body, html {
     font-size: 0;
     width: 768px;
     margin: auto;
+    text-justify: distribute;
 
     &:after {
       display: inline-block;
@@ -299,17 +302,26 @@ body, html {
   &__message-wrapper {
     width: 626px;
     padding-left: 28px;
-    margin: auto;
+    margin: 0 auto 12px;
   }
 
   &__message {
     font-family: LatoLight, sans-serif;
-    border-style: solid;
-    border-width: 14px;
-    border-image: url(../img/border.png) 13 repeat repeat;
     position: relative;
-    padding: 26px 0px 28px 33px;
+    padding: 30px 14px 28px 47px;
     line-height: 20px;
+    background: url("../img/message.png");
+
+    &:before {
+      display: block;
+      content: '';
+      position: absolute;
+      width: 597px;
+      height: 10px;
+      background-image: url("../img/message_before.png");
+      top: -10px;
+      left: 0;
+    }
 
     &:after {
       display: block;
@@ -319,14 +331,14 @@ body, html {
       height: 48px;
       background-image: url("../img/message_after.png");
       bottom: -48px;
-      left: -14px;
+      left: 0;
     }
   }
 
   &__wrapper {
     font-size: 0;
     width: 760px;
-    margin: -2px auto 0;
+    margin: auto;
   }
 
   &__avatar-wrapper {
@@ -377,6 +389,7 @@ body, html {
   &__social {
     font-size: 0;
     text-align: justify;
+    text-justify: distribute;
 
     &:after {
       display: inline-block;
@@ -393,6 +406,7 @@ body, html {
     font-size: 0;
     text-align: justify;
     padding-top: 28px;
+    text-justify: distribute;
 
     &:after {
       display: inline-block;
@@ -486,6 +500,7 @@ body, html {
     position: relative;
     line-height: 0;
     margin-bottom: 6px;
+    text-justify: distribute;
 
     &:after {
       display: inline-block;
