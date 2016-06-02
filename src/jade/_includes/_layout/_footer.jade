@@ -23,20 +23,20 @@ footer.footer
           .footer__text
             address.footer__address 84 Benson Cove Oakland, Maine 04963 USA
             a.footer__link(href="tel:+12074654622") +1.2074654622
-            a.footer__link(href="mailto: youremail@gmail.com") youremail@gmail.com
+            a.footer__link(href="mailto:youremail@gmail.com") youremail@gmail.com
         .footer__col.footer__col_form
           .footer__title Ask a question
           .footer__text
-            form.form.form_footer(method='posr', action='')
+            form.form.form_footer(method='post', action='/', novalidate)
               .form__group
                 label.form__label(for='name') Name
-                input.form__field(type='text', name='name', id='name')
+                input.form__field(data-required, type='text', name='name', id='name')
               .form__group
                 label.form__label(for='email') E-mail
-                input.form__field(type='email', name='email', id='email')
+                input.form__field(data-required, type='email', name='email', id='email')
               .form__group
                 label.form__label(for='message') Message
-                textarea.form__textarea.form__field(name='message', id='message')
+                textarea.form__textarea.form__field(data-required, name='message', id='message')
               .form__group.form__group_buttons
-                button.button.button_yellow(type="reset") Clean
+                button.button.button_yellow.button_footer(type="reset") Clean
                 button.button.button_blue(type="submit") Submit
