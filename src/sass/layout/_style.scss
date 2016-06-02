@@ -10,6 +10,8 @@ body, html {
   color: $dark-blue;
   font-size: 14px;
   min-width: 1020px;
+  width: 100%;
+  height: 100%;
 }
 
 .container {
@@ -87,6 +89,17 @@ body, html {
     &:hover {
       color: $blue;
     }
+  }
+}
+
+.wrapper{
+  min-height: 100%;
+  margin-bottom: -587px;
+
+  &:after{
+    display: block;
+    content: '';
+    height: 587px;
   }
 }
 
@@ -363,6 +376,7 @@ body, html {
 .footer {
   background-color: $dark-blue;
   color: white;
+  min-height: 587px;
 
   &__top {
     padding-top: 79px;
