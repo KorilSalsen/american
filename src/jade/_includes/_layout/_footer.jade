@@ -30,13 +30,13 @@ footer.footer
             form.form.form_footer(method='post', action='/', novalidate)
               .form__group
                 label.form__label(for='name') Name
-                input.form__field(data-required, type='text', name='name', id='name')
+                input.form__field(data-required, type='text', name='name', id='name', data-value='Enter your name')
               .form__group
                 label.form__label(for='email') E-mail
-                input.form__field(data-required, type='email', name='email', id='email')
+                input.form__field(data-required, type='email', name='email', id='email', data-value='Enter your email')
               .form__group
                 label.form__label(for='message') Message
-                textarea.form__textarea.form__field(data-required, name='message', id='message')
+                textarea.form__textarea.form__field(data-required, name='message', id='message', data-value='Enter your message')
               .form__group.form__group_buttons
                 button.button.button_yellow.button_footer(type="reset") Clean
                 button.button.button_blue(type="submit") Submit

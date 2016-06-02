@@ -509,6 +509,10 @@ body, html {
     position: relative;
     width: 165px;
 
+    &:placeholder{
+      color: $dark-blue;
+    }
+
     &:focus {
       border-color: $blue;
     }

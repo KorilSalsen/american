@@ -5,13 +5,13 @@
     form.form.form_popup(method='post', action='/', novalidate)
       .form__group
         label.form__label(for='name-popup') Name
-        input.form__field(data-required, type='text', name='name', id='name-popup')
+        input.form__field(data-required, type='text', name='name', id='name-popup', data-value='Enter your name')
       .form__group
         label.form__label(for='email-popup') E-mail
-        input.form__field(data-required, type='email', name='email', id='email-popup')
+        input.form__field(data-required, type='email', name='email', id='email-popup', data-value='Enter your email')
       .form__group
         label.form__label(for='message-popup') Message
-        textarea.form__textarea.form__field(data-required, name='message', id='message-popup').
+        textarea.form__textarea.form__field(data-required, name='message', id='message-popup', data-value='Enter your message').
       .form__group.form__group_buttons
         button.button.button_yellow.button_footer(type="reset") Clean
         button.button.button_blue.button_popup(type="submit") Submit
