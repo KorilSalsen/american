@@ -452,6 +452,12 @@ body, html {
     font-style: normal;
     display: block;
   }
+
+  &__link {
+    &:visited{
+      color: $gray;
+    }
+  }
 }
 
 .social {
