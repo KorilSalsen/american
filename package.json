@@ -15,7 +15,9 @@
   "devDependencies": {
     "gulp-cssnano": "*",
     "gulp-plumber": "*",
-    "gulp-watch": "*"
+    "gulp-rename": "^1.2.2",
+    "gulp-watch": "*",
+    "gulp.spritesmith": "^6.2.1"
   },
   "dependencies": {
     "browser-sync": "*",

@@ -2,17 +2,17 @@
 
 doctype html
 html(lang="ru-RU")
-	block head
-		include ./_includes/_head/_head.jade
-	body
-		.wrapper
-			.maincontent
-				block header
-					include ./_includes/_layout/_header.jade
-				main
-					block main
-						include ./_includes/_layout/_main.jade
-				block footer
-					include ./_includes/_layout/_footer.jade
-		block script
-			include ./_includes/_layout/_script.jade
+  block head
+    include ./_includes/_head/_head.jade
+  body
+    .wrapper
+      .maincontent
+        block header
+          include ./_includes/_layout/_header.jade
+        block main
+        block footer
+          include ./_includes/_layout/_footer.jade
+        block popup
+          include ./_includes/_layout/_popup.jade
+    block script
+      include ./_includes/_layout/_script.jade

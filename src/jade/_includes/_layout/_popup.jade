@@ -1,0 +1,17 @@
+.popup(data-popup)
+  .popup__body
+    a.popup__close(href='',data-popup-close)
+    h2.title Participate now
+    form.form.form_popup
+      .form__group
+        label.form__label(for='name-popup') Name
+        input.form__field(type='text', name='name', id='name-popup')
+      .form__group
+        label.form__label(for='email-popup') E-mail
+        input.form__field(type='email', name='email', id='email-popup')
+      .form__group
+        label.form__label(for='message-popup') Message
+        textarea.form__textarea.form__field(name='message', id='message-popup').
+      .form__group.form__group_buttons
+        button.button.button_yellow(type="reset") Clean
+        button.button.button_blue.button_popup(type="submit") Submit

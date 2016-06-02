@@ -1,6 +1,6 @@
 header.header
   .header__top
-    .container
+    .container.container_justify
       a.logo(href='/')
         img.logo__img(src='img/logo.png', alt='Academic adventures')
       menu.menu
@@ -8,7 +8,7 @@ header.header
           - var elements = ['Academics tours', 'English courses', 'Stay at home']
           each element in elements
             li.menu__list-item
-              a.link(rel="stylesheet" href="") #{element}
+              a.menu__link(rel="stylesheet" href="") #{element}
   .header__bottom.header__bottom_students
     .container
       h1.header__description Your future is waiting at Academic Adventures USA

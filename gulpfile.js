@@ -14,7 +14,10 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'), // Минификация JS
 
     plumber = require('gulp-plumber'),
-    watch = require('gulp-watch');
+    watch = require('gulp-watch'),
+
+    rename = require('gulp-rename'),
+    spritesmith = require('gulp.spritesmith');
 
 
 //Собираем Jade ( html )
@@ -54,7 +57,7 @@ gulp.task('sass-dev', function() {
 //Сжатие изображений
 gulp.task('img', function() {
   return gulp.src('src/img/**/**/**')
-    .pipe(imagemin({ optimizationLevel: 3, progressive: true}))
+    //.pipe(imagemin({ optimizationLevel: 3, progressive: true}))
     .pipe(gulp.dest('build/img/'));
 });
 
@@ -96,7 +99,37 @@ gulp.task('fonts', function(){
   .pipe(browserSync.stream());
 });
 
+//Sprites
+gulp.task('sprite', function () {
+    var spriteData = gulp.src('src/img/sprites/*.png')
+        .pipe(plumber())
+        .pipe(spritesmith({
+            imgName: '../img/sprite.png',
+            cssName: '_sprite.scss',
+            cssFormat: 'css',
+            cssOpts: {
+                cssSelector: function (item) {
+                    var result = '.' + item.name,
+                        index;
 
+                    while (true) {
+                        index = result.indexOf('$');
+
+                        if (index !== -1) {
+                            result = result.replace(result.charAt(index), ':');
+                        } else break;
+                    }
+
+                    return result;
+                }
+            },
+            padding: 70
+        }));
+    spriteData.img
+        .pipe(rename('sprite.png'))
+        .pipe(gulp.dest('src/img/'));
+    spriteData.css.pipe(gulp.dest('src/sass/layout/'));
+});
 
 // WATCH
 gulp.task('default', ['jade-templates','sass-dev','img','js-vendor','js','favicon','fonts'], function () {

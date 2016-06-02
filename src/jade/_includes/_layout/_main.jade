@@ -5,22 +5,27 @@ main.content
         ul.info__list
           - var images = ['tours', 'courses', 'home']
           - var titles = ['Academics tours', 'English courses', 'Stay at home']
-          - var text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean'
+          - var text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. justo commodo.'
           each image, i in images
             li.info__list-item
               i.info__ico(class="info__ico_#{image}")
               h4.info__title #{titles[i]}
               .info__text #{text}
-              a.button.button_more(href='') More
+              a.button.button_blue(href='') More
   article.photos
     .container
       h2.title Photos of happy students
       .photos__wrapper
         - for(var i = 1; i <= 7; i++)
-          img.photos__img(src="img/photos/photo-#{i}.jpg", alt="Happy students")
+          if(i == 4)
+            .photos__col
+                img.photos__img(src='img/photos/photo-#{i}.jpg', alt="Happy students")
+                img.photos__img(src='img/photos/photo-#{i + 1}.jpg', alt="Happy students")
+          else if (i != 5)
+              img.photos__img(src='img/photos/photo-#{i}.jpg', alt="Happy students")
   article.work
     .container
-      h2.title How it works
+      h2.title.title_work How it works
       ul.work__list
         - var elements = ['post', 'chat', 'purse', 'plane']
         - var text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
@@ -30,8 +35,9 @@ main.content
             .work__text #{text}
   article.rewiews
     .container
-      h2.title Rewiews
-      .rewiews__message Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.
+      h2.title.title_rewiews Rewiews
+      .rewiews__message-wrapper
+        .rewiews__message Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.
       .rewiews__wrapper
         .rewiews__avatar-wrapper
           img.rewiews__avatar(src="img/avatars/avatar.jpg")

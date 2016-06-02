@@ -1,0 +1,138 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.form__group_no-valid:before {
+  background-image: url(../img/sprite.png);
+  background-position: -669px -171px;
+  width: 13px;
+  height: 13px;
+}
+.form__group_valid:before {
+  background-image: url(../img/sprite.png);
+  background-position: -669px -87px;
+  width: 14px;
+  height: 14px;
+}
+.form_popup .form__group_no-valid:before {
+  background-image: url(../img/sprite.png);
+  background-position: -556px -339px;
+  width: 26px;
+  height: 26px;
+}
+.form_popup .form__group_valid:before {
+  background-image: url(../img/sprite.png);
+  background-position: -556px -435px;
+  width: 25px;
+  height: 26px;
+}
+.info__ico_courses {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 120px;
+  height: 120px;
+}
+.info__ico_home {
+  background-image: url(../img/sprite.png);
+  background-position: -190px 0px;
+  width: 120px;
+  height: 120px;
+}
+.info__ico_tours {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -190px;
+  width: 120px;
+  height: 120px;
+}
+.popup__close {
+  background-image: url(../img/sprite.png);
+  background-position: -669px 0px;
+  width: 17px;
+  height: 17px;
+}
+.social__link_fb:hover {
+  background-image: url(../img/sprite.png);
+  background-position: -289px -380px;
+  width: 43px;
+  height: 43px;
+}
+.social__link_fb {
+  background-image: url(../img/sprite.png);
+  background-position: -402px -380px;
+  width: 43px;
+  height: 43px;
+}
+.social__link_twitter:hover {
+  background-image: url(../img/sprite.png);
+  background-position: -176px -380px;
+  width: 43px;
+  height: 43px;
+}
+.social__link_twitter {
+  background-image: url(../img/sprite.png);
+  background-position: -556px -113px;
+  width: 43px;
+  height: 43px;
+}
+.social__link_vk:hover {
+  background-image: url(../img/sprite.png);
+  background-position: -556px -226px;
+  width: 43px;
+  height: 43px;
+}
+.social__link_vk {
+  background-image: url(../img/sprite.png);
+  background-position: -556px 0px;
+  width: 43px;
+  height: 43px;
+}
+.title:after {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -556px;
+  width: 88px;
+  height: 8px;
+}
+.title_white:after {
+  background-image: url(../img/sprite.png);
+  background-position: -158px -556px;
+  width: 88px;
+  height: 8px;
+}
+.work__ico_chat {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -380px;
+  width: 106px;
+  height: 106px;
+}
+.work__ico_plane {
+  background-image: url(../img/sprite.png);
+  background-position: -380px -176px;
+  width: 106px;
+  height: 106px;
+}
+.work__ico_post {
+  background-image: url(../img/sprite.png);
+  background-position: -380px 0px;
+  width: 106px;
+  height: 106px;
+}
+.work__ico_purse {
+  background-image: url(../img/sprite.png);
+  background-position: -190px -190px;
+  width: 106px;
+  height: 106px;
+}
