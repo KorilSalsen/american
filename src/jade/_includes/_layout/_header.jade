@@ -9,4 +9,4 @@ header.header
           - var links = ['tours.html', '', '']
           each element, i in elements
             li.menu__list-item
-              a.menu__link(rel="stylesheet" href="#{links[i]}" class='' + (i == 0 ? 'menu__link_active' : '') ) #{element}
+              a.menu__link(href="#{links[i]}" class='' + (i == 0 ? 'menu__link_active' : '') ) #{element}
