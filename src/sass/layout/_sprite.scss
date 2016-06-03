@@ -16,123 +16,243 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 // HTML
 <i class="icon icon-home"></i>
 */
+.description__ico_air {
+  background-image: url(../img/sprite.png);
+  background-position: -1045px -192px;
+  width: 25px;
+  height: 26px;
+}
+.description__ico_books {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -880px;
+  width: 55px;
+  height: 55px;
+}
+.description__ico_calendar {
+  background-image: url(../img/sprite.png);
+  background-position: -920px -500px;
+  width: 55px;
+  height: 55px;
+}
+.description__ico_clock {
+  background-image: url(../img/sprite.png);
+  background-position: -920px -750px;
+  width: 55px;
+  height: 55px;
+}
+.description__ico_cup {
+  background-image: url(../img/sprite.png);
+  background-position: -920px -625px;
+  width: 55px;
+  height: 55px;
+}
+.description__ico_list {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -1005px;
+  width: 27px;
+  height: 19px;
+}
+.description__ico_message {
+  background-image: url(../img/sprite.png);
+  background-position: -920px -375px;
+  width: 55px;
+  height: 55px;
+}
+.description__ico_rucksack {
+  background-image: url(../img/sprite.png);
+  background-position: -920px -250px;
+  width: 55px;
+  height: 55px;
+}
+.description__ico_student {
+  background-image: url(../img/sprite.png);
+  background-position: -920px -125px;
+  width: 55px;
+  height: 55px;
+}
+.description__ico_wi-fi {
+  background-image: url(../img/sprite.png);
+  background-position: -920px 0px;
+  width: 55px;
+  height: 55px;
+}
 .form__group_no-valid:before {
   background-image: url(../img/sprite.png);
-  background-position: -669px -171px;
+  background-position: -1045px -459px;
   width: 13px;
   height: 13px;
 }
 .form__group_valid:before {
   background-image: url(../img/sprite.png);
-  background-position: -669px -87px;
+  background-position: -1045px -375px;
   width: 14px;
   height: 14px;
 }
 .form_popup .form__group_no-valid:before {
   background-image: url(../img/sprite.png);
-  background-position: -556px -339px;
+  background-position: -1045px 0px;
   width: 26px;
   height: 26px;
 }
 .form_popup .form__group_valid:before {
   background-image: url(../img/sprite.png);
-  background-position: -556px -435px;
+  background-position: -1045px -96px;
   width: 25px;
   height: 26px;
 }
 .info__ico_courses {
   background-image: url(../img/sprite.png);
-  background-position: 0px 0px;
+  background-position: -690px -230px;
   width: 120px;
   height: 120px;
 }
 .info__ico_home {
   background-image: url(../img/sprite.png);
-  background-position: -190px 0px;
+  background-position: -690px -420px;
   width: 120px;
   height: 120px;
 }
 .info__ico_tours {
   background-image: url(../img/sprite.png);
-  background-position: 0px -190px;
+  background-position: 0px -690px;
   width: 120px;
   height: 120px;
 }
 .popup__close {
   background-image: url(../img/sprite.png);
-  background-position: -669px 0px;
+  background-position: -1045px -288px;
   width: 17px;
   height: 17px;
 }
 .social__link_fb:hover {
   background-image: url(../img/sprite.png);
-  background-position: -289px -380px;
+  background-position: -690px -880px;
   width: 43px;
   height: 43px;
 }
 .social__link_fb {
   background-image: url(../img/sprite.png);
-  background-position: -402px -380px;
+  background-position: -125px -880px;
   width: 43px;
   height: 43px;
 }
 .social__link_twitter:hover {
   background-image: url(../img/sprite.png);
-  background-position: -176px -380px;
+  background-position: -238px -880px;
   width: 43px;
   height: 43px;
 }
 .social__link_twitter {
   background-image: url(../img/sprite.png);
-  background-position: -556px -113px;
+  background-position: -351px -880px;
   width: 43px;
   height: 43px;
 }
 .social__link_vk:hover {
   background-image: url(../img/sprite.png);
-  background-position: -556px -226px;
+  background-position: -464px -880px;
   width: 43px;
   height: 43px;
 }
 .social__link_vk {
   background-image: url(../img/sprite.png);
-  background-position: -556px 0px;
+  background-position: -577px -880px;
   width: 43px;
   height: 43px;
 }
 .title:after {
   background-image: url(../img/sprite.png);
-  background-position: 0px -556px;
+  background-position: -803px -880px;
   width: 88px;
   height: 8px;
 }
 .title_white:after {
   background-image: url(../img/sprite.png);
-  background-position: -158px -556px;
+  background-position: -690px -610px;
   width: 88px;
   height: 8px;
 }
+.university__ico_columbia:hover {
+  background-image: url(../img/sprite.png);
+  background-position: -460px -230px;
+  width: 160px;
+  height: 160px;
+}
+.university__ico_columbia {
+  background-image: url(../img/sprite.png);
+  background-position: -460px 0px;
+  width: 160px;
+  height: 160px;
+}
+.university__ico_fisher:hover {
+  background-image: url(../img/sprite.png);
+  background-position: -230px -230px;
+  width: 160px;
+  height: 160px;
+}
+.university__ico_fisher {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -230px;
+  width: 160px;
+  height: 160px;
+}
+.university__ico_harvard:hover {
+  background-image: url(../img/sprite.png);
+  background-position: -230px 0px;
+  width: 160px;
+  height: 160px;
+}
+.university__ico_harvard {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -460px;
+  width: 160px;
+  height: 160px;
+}
+.university__ico_mass:hover {
+  background-image: url(../img/sprite.png);
+  background-position: -230px -460px;
+  width: 160px;
+  height: 160px;
+}
+.university__ico_mass {
+  background-image: url(../img/sprite.png);
+  background-position: -460px -460px;
+  width: 160px;
+  height: 160px;
+}
+.university__ico_ny:hover {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 160px;
+  height: 160px;
+}
+.university__ico_ny {
+  background-image: url(../img/sprite.png);
+  background-position: -690px 0px;
+  width: 160px;
+  height: 160px;
+}
 .work__ico_chat {
   background-image: url(../img/sprite.png);
-  background-position: 0px -380px;
+  background-position: -190px -690px;
   width: 106px;
   height: 106px;
 }
 .work__ico_plane {
   background-image: url(../img/sprite.png);
-  background-position: -380px -176px;
+  background-position: -718px -690px;
   width: 106px;
   height: 106px;
 }
 .work__ico_post {
   background-image: url(../img/sprite.png);
-  background-position: -380px 0px;
+  background-position: -366px -690px;
   width: 106px;
   height: 106px;
 }
 .work__ico_purse {
   background-image: url(../img/sprite.png);
-  background-position: -190px -190px;
+  background-position: -542px -690px;
   width: 106px;
   height: 106px;
 }

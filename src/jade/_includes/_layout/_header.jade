@@ -6,9 +6,7 @@ header.header
       menu.menu
         ul.menu__list
           - var elements = ['Academics tours', 'English courses', 'Stay at home']
-          each element in elements
+          - var links = ['tours.html', '', '']
+          each element, i in elements
             li.menu__list-item
-              a.menu__link(rel="stylesheet" href="") #{element}
-  .header__bottom.header__bottom_students
-    .container
-      h1.header__description Your future is waiting at Academic Adventures USA
+              a.menu__link(rel="stylesheet" href="#{links[i]}" class='' + (i == 0 ? 'menu__link_active' : '') ) #{element}

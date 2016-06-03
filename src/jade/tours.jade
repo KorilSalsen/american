@@ -1,0 +1,30 @@
+extends _layout.jade
+block main
+    main.content
+        .banner.banner_map
+            .container
+                h1.banner__description Universities
+        article.university
+            .container
+                ul.university__list
+                    - var items = ['fisher', 'harvard', 'columbia', 'mass', 'ny']
+                    each item in items
+                        li.university__list-item
+                           a.university__link(href='', target='_blank')
+                            i.university__ico(class='university__ico_#{item}')
+        article.description
+            .container
+                h2.title.title_description Description
+                .description__wrapper
+                    .description__text
+                        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum, nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.
+                        p Vivamus volutpat eros pulvinar velit laoreet, sit amet egestas erat dignissim. Sed quis rutrum tellus, sit amet viverra felis. Cras sagittis sem sit amet urna feugiat rutrum. Nam nulla ipsum, venenatis malesuada felis quis, ultricies convallis neque. Pellentesque tristique fringilla tempus. Vivamus bibendum nibh in dolor pharetra, a euismod nulla dignissim. Aenean viverra tincidunt nibh, in imperdiet nunc. Suspendisse eu ante pretium, consectetur leo at, congue quam.
+                        a.description__link(href='')
+                            i.description__ico.description__ico_list
+                            | Students who are already studying in US universities
+                    ul.description__list
+                        - var items = ['books', 'rucksack', 'message', 'student']
+                        each item in items
+                            li.description__list-item
+                                i.description__ico(class='description__ico_#{item}')
+                                | Lorem Ipsum
