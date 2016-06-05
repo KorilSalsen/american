@@ -6,17 +6,16 @@ block main
                 h1.banner__description Your future is waiting at Academic Adventures USA
         article.info
             .container
-                .info__body
-                    ul.info__list
-                        - var images = ['tours', 'courses', 'home']
-                        - var titles = ['Academics tours', 'English courses', 'Stay at home']
-                        - var text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. justo commodo.'
-                        each image, i in images
-                            li.info__list-item
-                                i.info__ico(class="info__ico_#{image}")
-                                .info__title #{titles[i]}
-                                .info__text #{text}
-                                a.button.button_blue(href='') More
+                ul.info__list
+                    - var images = ['tours', 'courses', 'home']
+                    - var titles = ['Academics tours', 'English courses', 'Stay at home']
+                    - var text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. justo commodo.'
+                    each image, i in images
+                        li.info__list-item
+                            i.info__ico(class="info__ico_#{image}")
+                            .info__title #{titles[i]}
+                            .info__text #{text}
+                            a.button.button_blue(href='') More
         article.photos
             .container
                 h2.title Photos of happy students
@@ -47,3 +46,8 @@ block main
                     .rewiews__avatar-wrapper
                         img.rewiews__avatar(src="img/avatars/avatar.jpg", alt="avatar")
                     .rewiews__info Name Surname, Country
+        article.application
+            .container
+                .application__description
+                    h2.application__title Want to participate?
+                    a.button.button_yellow.button_big(href='', data-popup-show) Yes

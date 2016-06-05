@@ -1,0 +1,41 @@
+.info {
+  background-color: $dark-blue;
+  padding-bottom: 1px;
+
+  &__list {
+    position: relative;
+    top: -53px;
+    background-color: white;
+    padding: 12px 28px 24px;
+    width: 780px;
+    margin: auto;
+
+    @include justify;
+
+    &-item {
+      font-size: 14px;
+      display: inline-block;
+      width: 170px;
+      text-align: center;
+      vertical-align: top;
+    }
+  }
+
+  &__ico {
+    display: inline-block;
+    line-height: 0;
+  }
+
+  &__title {
+    font-family: $lato-bold;
+    line-height: 19px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+  }
+
+  &__text {
+    line-height: 20px;
+    margin-bottom: 13px;
+    font-family: $lato-light;
+  }
+}

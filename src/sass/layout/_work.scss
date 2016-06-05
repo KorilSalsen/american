@@ -1,0 +1,36 @@
+.work {
+  color: white;
+  background-color: $dark-blue;
+  background-image: url("../img/work-bg.jpg");
+  background-size: cover;
+  padding-top: 53px;
+  padding-bottom: 61px;
+
+  &__list {
+    width: 768px;
+    margin: auto;
+
+    @include justify;
+
+    &-item {
+      display: inline-block;
+      vertical-align: top;
+      font-size: 14px;
+      text-align: center;
+      width: 129px;
+    }
+  }
+
+  &__ico {
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-bottom: 16px;
+    line-height: 0;
+  }
+
+  &__text {
+    line-height: 20px;
+    font-family: $lato-light;
+  }
+}

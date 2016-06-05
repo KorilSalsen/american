@@ -1,12 +1,11 @@
 header.header
-  .header__top
     .container.container_justify
       a.logo(href='/')
         img.logo__img(src='img/logo.png', alt='Academic adventures')
       menu.menu
         ul.menu__list
           - var elements = ['Academics tours', 'English courses', 'Stay at home']
-          - var links = ['tours.html', '', '']
+          - var links = ['tours.html', 'courses.html', 'home.html']
           each element, i in elements
             li.menu__list-item
               a.menu__link(href="#{links[i]}" class='' + (i == 0 ? 'menu__link_active' : '') ) #{element}

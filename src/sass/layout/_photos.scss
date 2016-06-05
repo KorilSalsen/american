@@ -1,0 +1,28 @@
+.photos {
+  padding: 53px 0 34px;
+  background-color: white;
+
+  &_home{
+    padding: 58px 0 82px;
+  }
+
+  &__wrapper {
+    font-size: 0;
+    margin-right: -10px;
+    margin-bottom: -10px;
+  }
+
+  &__col {
+    display: inline-block;
+    vertical-align: top;
+    width: 230px;
+  }
+
+  &__img {
+    max-width: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    vertical-align: top;
+  }
+}

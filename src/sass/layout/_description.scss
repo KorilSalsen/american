@@ -1,0 +1,66 @@
+.description{
+  background-color: $light-blue;
+  padding: 38px 0 46px;
+
+  &_home{
+    padding-bottom: 41px;
+  }
+  &_courses{
+    padding-bottom: 30px;
+  }
+
+  &__wrapper{
+    font-size: 0;
+  }
+
+  &__text, &__list{
+    display: inline-block;
+    font-size: 14px;
+    vertical-align: top;
+  }
+
+  &__text{
+    width: 465px;
+    margin-right: 79px;
+
+    p{
+      text-indent: 35px;
+      line-height: 20px;
+    }
+  }
+
+  &__list-item{
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-family: $lato-bold;
+    margin-bottom: 13px;
+  }
+
+  &__ico{
+    display: inline-block;
+    margin-right: 21px;
+    vertical-align: middle;
+
+    &_list{
+      margin-right: 13px;
+      margin-bottom: 1px;
+    }
+
+    &_air{
+      margin-bottom: 4px;
+      margin-right: 14px;
+    }
+  }
+
+  &__link{
+    display: inline-block;
+    margin-top: 21px;
+    vertical-align: middle;
+    font-family: $lato-bold;
+    text-decoration: underline;
+
+    &_air{
+      margin-top: 16px;
+    }
+  }
+}

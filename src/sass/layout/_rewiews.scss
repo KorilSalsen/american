@@ -1,0 +1,65 @@
+.rewiews {
+  background-color: white;
+  padding-top: 46px;
+  padding-bottom: 43px;
+
+  &__message-wrapper {
+    width: 626px;
+    padding-left: 28px;
+    margin: 0 auto 12px;
+  }
+
+  &__message {
+    font-family: LatoLight, sans-serif;
+    position: relative;
+    padding: 30px 14px 28px 47px;
+    line-height: 20px;
+    background: url("../img/message.png");
+
+    &:before {
+      display: block;
+      content: '';
+      position: absolute;
+      width: 597px;
+      height: 10px;
+      background-image: url("../img/message_before.png");
+      top: -10px;
+      left: 0;
+    }
+
+    &:after {
+      display: block;
+      content: '';
+      position: absolute;
+      width: 597px;
+      height: 48px;
+      background-image: url("../img/message_after.png");
+      bottom: -48px;
+      left: 0;
+    }
+  }
+
+  &__wrapper {
+    font-size: 0;
+    width: 760px;
+    margin: auto;
+  }
+
+  &__avatar-wrapper {
+    width: 118px;
+    height: 118px;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 9px;
+    vertical-align: bottom;
+  }
+
+  &__info {
+    display: inline-block;
+    left: 20px;
+    font-size: 24px;
+    font-family: $lato-bold;
+    padding-bottom: 25px;
+  }
+}

@@ -1,0 +1,25 @@
+.application{
+  color: white;
+  padding-top: 79px;
+  padding-bottom: 79px;
+  min-height: 243px;
+  background-image: url("../img/footer-bg.jpg");
+  background-size: cover;
+
+  &_home, &_courses{
+    min-height: 240px;
+  }
+
+  &__title{
+    display: inline-block;
+  }
+
+  &__description {
+    font-size: 36px;
+    font-family: $lato-bold;
+    line-height: 56px;
+    text-align: right;
+    padding: 0 19px;
+    vertical-align: middle;
+  }
+}

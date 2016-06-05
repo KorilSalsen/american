@@ -1,0 +1,142 @@
+.form {
+  &__field {
+    height: 23px;
+    border: 1px solid $dark-blue;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 12px;
+    line-height: 12px;
+    background-color: white;
+    padding: 4px 8px;
+    color: $dark-blue;
+    position: relative;
+    width: 165px;
+
+    &:placeholder {
+      color: $dark-blue;
+    }
+
+    &:focus {
+      border-color: $blue;
+    }
+  }
+
+  &__group {
+    font-size: 0;
+    text-align: justify;
+    position: relative;
+    line-height: 0;
+    margin-bottom: 6px;
+    text-justify: distribute;
+
+    &:after {
+      display: inline-block;
+      content: '';
+      width: 100%;
+      height: 0;
+    }
+
+    &:before {
+      position: absolute;
+      content: '';
+      top: 4px;
+      right: 4px;
+      z-index: 1;
+    }
+
+    &_valid {
+      .form__field {
+        border-color: $green;
+        padding-right: 22px;
+      }
+
+      &:before {
+        display: block;
+      }
+    }
+
+    &_no-valid {
+      .form__field {
+        border-color: $red;
+        padding-right: 22px;
+      }
+
+      &:before {
+        display: block;
+      }
+    }
+
+    &_buttons {
+      padding-left: 65px;
+      margin-bottom: 0;
+      padding-top: 10px;
+    }
+  }
+
+  &__label {
+    height: 21px;
+    font-size: 12px;
+    line-height: 12px;
+    vertical-align: top;
+    display: inline-block;
+    padding: 4px 0;
+  }
+
+  &__textarea {
+    height: 74px;
+    resize: none;
+  }
+
+  &_popup {
+    .form {
+      &__group {
+        margin-bottom: 16px;
+
+        &_valid {
+          .form__field {
+            padding-right: 40px;
+          }
+
+          &:before {
+            right: 7px;
+          }
+        }
+
+        &_no-valid {
+          .form__field {
+            padding-right: 40px;
+          }
+
+          &:before {
+            right: 7px;
+          }
+        }
+
+        &_buttons {
+          text-align: right;
+          margin-bottom: 0;
+          padding-top: 9px;
+        }
+      }
+
+      &__label {
+        font-family: $lato-bold;
+        font-size: 24px;
+        height: 37px;
+        padding: 6px 0;
+        line-height: 100%;
+      }
+
+      &__field {
+        font-size: 12px;
+        height: 37px;
+        width: 293px;
+        padding: 12px 20px;
+      }
+
+      &__textarea {
+        height: 128px;
+      }
+    }
+  }
+}

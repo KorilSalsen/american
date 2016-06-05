@@ -1,0 +1,73 @@
+.footer {
+  background-color: $dark-blue;
+  color: white;
+  min-height: 234px;
+  padding-top: 12px;
+
+  &__social {
+    @include justify;
+
+    padding-bottom: 13px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+  }
+
+  &__info {
+    padding: 22px 0;
+
+    @include justify;
+  }
+
+  &__col {
+    display: inline-block;
+    font-size: 14px;
+    vertical-align: top;
+
+    &_about {
+      width: 275px;
+      text-align: left;
+    }
+
+    &_address {
+      width: 135px;
+      margin-left: 13px;
+    }
+
+    &_form {
+      width: 230px;
+    }
+  }
+
+  &__title {
+    font-family: $lato-bold;
+    margin-bottom: 14px;
+  }
+
+  &__text {
+    font-size: 12px;
+    font-family: $lato-light;
+    line-height: 18px;
+  }
+
+  &__address, &__link {
+    text-align: left;
+    margin-bottom: 18px;
+    font-style: normal;
+    display: block;
+  }
+
+  &__link {
+    &:visited {
+      color: $gray;
+    }
+  }
+
+  &__rights{
+    background-color: #19232d;
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 17px;
+    vertical-align: middle;
+    color: $dark-blue;
+    font-family: $lato-light;
+  }
+}
