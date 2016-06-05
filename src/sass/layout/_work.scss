@@ -27,6 +27,12 @@
     border-radius: 50%;
     margin-bottom: 16px;
     line-height: 0;
+    width: 106px;
+    height: 106px;
+
+    $mods: 'post', 'chat', 'purse', 'plane';
+
+    @include svg-ico($mods);
   }
 
   &__text {

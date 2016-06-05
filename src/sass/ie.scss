@@ -1,0 +1,20 @@
+@import 'layout/sprite';
+@import 'base/mixins';
+
+.university{
+  &__ico{
+    $names: 'mass', 'ny', 'fisher', 'columbia', 'harvard';
+
+    @for $i from 1 through length($names){
+      $name: nth($names, $i);
+
+      &_#{$name}{
+        @include sprite-string('university__ico_#{$name}-ie');
+
+        &:hover{
+          @include sprite-string('university__ico_#{$name}');
+        }
+      }
+    }
+  }
+}

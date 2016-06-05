@@ -1,5 +1,472 @@
 /*
-Icon classes can be used entirely standalone. They are named after their original file names.
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$description-ico-air-name: 'description__ico_air';
+$description-ico-air-x: 1045px;
+$description-ico-air-y: 192px;
+$description-ico-air-offset-x: -1045px;
+$description-ico-air-offset-y: -192px;
+$description-ico-air-width: 25px;
+$description-ico-air-height: 26px;
+$description-ico-air-total-width: 1071px;
+$description-ico-air-total-height: 1024px;
+$description-ico-air-image: '../img/sprite.png';
+$description-ico-air: (1045px, 192px, -1045px, -192px, 25px, 26px, 1071px, 1024px, '../img/sprite.png', 'description__ico_air', );
+$description-ico-books-name: 'description__ico_books';
+$description-ico-books-x: 0px;
+$description-ico-books-y: 880px;
+$description-ico-books-offset-x: 0px;
+$description-ico-books-offset-y: -880px;
+$description-ico-books-width: 55px;
+$description-ico-books-height: 55px;
+$description-ico-books-total-width: 1071px;
+$description-ico-books-total-height: 1024px;
+$description-ico-books-image: '../img/sprite.png';
+$description-ico-books: (0px, 880px, 0px, -880px, 55px, 55px, 1071px, 1024px, '../img/sprite.png', 'description__ico_books', );
+$description-ico-calendar-name: 'description__ico_calendar';
+$description-ico-calendar-x: 920px;
+$description-ico-calendar-y: 500px;
+$description-ico-calendar-offset-x: -920px;
+$description-ico-calendar-offset-y: -500px;
+$description-ico-calendar-width: 55px;
+$description-ico-calendar-height: 55px;
+$description-ico-calendar-total-width: 1071px;
+$description-ico-calendar-total-height: 1024px;
+$description-ico-calendar-image: '../img/sprite.png';
+$description-ico-calendar: (920px, 500px, -920px, -500px, 55px, 55px, 1071px, 1024px, '../img/sprite.png', 'description__ico_calendar', );
+$description-ico-clock-name: 'description__ico_clock';
+$description-ico-clock-x: 920px;
+$description-ico-clock-y: 750px;
+$description-ico-clock-offset-x: -920px;
+$description-ico-clock-offset-y: -750px;
+$description-ico-clock-width: 55px;
+$description-ico-clock-height: 55px;
+$description-ico-clock-total-width: 1071px;
+$description-ico-clock-total-height: 1024px;
+$description-ico-clock-image: '../img/sprite.png';
+$description-ico-clock: (920px, 750px, -920px, -750px, 55px, 55px, 1071px, 1024px, '../img/sprite.png', 'description__ico_clock', );
+$description-ico-cup-name: 'description__ico_cup';
+$description-ico-cup-x: 920px;
+$description-ico-cup-y: 625px;
+$description-ico-cup-offset-x: -920px;
+$description-ico-cup-offset-y: -625px;
+$description-ico-cup-width: 55px;
+$description-ico-cup-height: 55px;
+$description-ico-cup-total-width: 1071px;
+$description-ico-cup-total-height: 1024px;
+$description-ico-cup-image: '../img/sprite.png';
+$description-ico-cup: (920px, 625px, -920px, -625px, 55px, 55px, 1071px, 1024px, '../img/sprite.png', 'description__ico_cup', );
+$description-ico-list-name: 'description__ico_list';
+$description-ico-list-x: 0px;
+$description-ico-list-y: 1005px;
+$description-ico-list-offset-x: 0px;
+$description-ico-list-offset-y: -1005px;
+$description-ico-list-width: 27px;
+$description-ico-list-height: 19px;
+$description-ico-list-total-width: 1071px;
+$description-ico-list-total-height: 1024px;
+$description-ico-list-image: '../img/sprite.png';
+$description-ico-list: (0px, 1005px, 0px, -1005px, 27px, 19px, 1071px, 1024px, '../img/sprite.png', 'description__ico_list', );
+$description-ico-message-name: 'description__ico_message';
+$description-ico-message-x: 920px;
+$description-ico-message-y: 375px;
+$description-ico-message-offset-x: -920px;
+$description-ico-message-offset-y: -375px;
+$description-ico-message-width: 55px;
+$description-ico-message-height: 55px;
+$description-ico-message-total-width: 1071px;
+$description-ico-message-total-height: 1024px;
+$description-ico-message-image: '../img/sprite.png';
+$description-ico-message: (920px, 375px, -920px, -375px, 55px, 55px, 1071px, 1024px, '../img/sprite.png', 'description__ico_message', );
+$description-ico-rucksack-name: 'description__ico_rucksack';
+$description-ico-rucksack-x: 920px;
+$description-ico-rucksack-y: 250px;
+$description-ico-rucksack-offset-x: -920px;
+$description-ico-rucksack-offset-y: -250px;
+$description-ico-rucksack-width: 55px;
+$description-ico-rucksack-height: 55px;
+$description-ico-rucksack-total-width: 1071px;
+$description-ico-rucksack-total-height: 1024px;
+$description-ico-rucksack-image: '../img/sprite.png';
+$description-ico-rucksack: (920px, 250px, -920px, -250px, 55px, 55px, 1071px, 1024px, '../img/sprite.png', 'description__ico_rucksack', );
+$description-ico-student-name: 'description__ico_student';
+$description-ico-student-x: 920px;
+$description-ico-student-y: 125px;
+$description-ico-student-offset-x: -920px;
+$description-ico-student-offset-y: -125px;
+$description-ico-student-width: 55px;
+$description-ico-student-height: 55px;
+$description-ico-student-total-width: 1071px;
+$description-ico-student-total-height: 1024px;
+$description-ico-student-image: '../img/sprite.png';
+$description-ico-student: (920px, 125px, -920px, -125px, 55px, 55px, 1071px, 1024px, '../img/sprite.png', 'description__ico_student', );
+$description-ico-wi-fi-name: 'description__ico_wi-fi';
+$description-ico-wi-fi-x: 920px;
+$description-ico-wi-fi-y: 0px;
+$description-ico-wi-fi-offset-x: -920px;
+$description-ico-wi-fi-offset-y: 0px;
+$description-ico-wi-fi-width: 55px;
+$description-ico-wi-fi-height: 55px;
+$description-ico-wi-fi-total-width: 1071px;
+$description-ico-wi-fi-total-height: 1024px;
+$description-ico-wi-fi-image: '../img/sprite.png';
+$description-ico-wi-fi: (920px, 0px, -920px, 0px, 55px, 55px, 1071px, 1024px, '../img/sprite.png', 'description__ico_wi-fi', );
+$form-group-no-valid-before-name: 'form__group_no-valid$before';
+$form-group-no-valid-before-x: 1045px;
+$form-group-no-valid-before-y: 459px;
+$form-group-no-valid-before-offset-x: -1045px;
+$form-group-no-valid-before-offset-y: -459px;
+$form-group-no-valid-before-width: 13px;
+$form-group-no-valid-before-height: 13px;
+$form-group-no-valid-before-total-width: 1071px;
+$form-group-no-valid-before-total-height: 1024px;
+$form-group-no-valid-before-image: '../img/sprite.png';
+$form-group-no-valid-before: (1045px, 459px, -1045px, -459px, 13px, 13px, 1071px, 1024px, '../img/sprite.png', 'form__group_no-valid$before', );
+$form-group-valid-before-name: 'form__group_valid$before';
+$form-group-valid-before-x: 1045px;
+$form-group-valid-before-y: 375px;
+$form-group-valid-before-offset-x: -1045px;
+$form-group-valid-before-offset-y: -375px;
+$form-group-valid-before-width: 14px;
+$form-group-valid-before-height: 14px;
+$form-group-valid-before-total-width: 1071px;
+$form-group-valid-before-total-height: 1024px;
+$form-group-valid-before-image: '../img/sprite.png';
+$form-group-valid-before: (1045px, 375px, -1045px, -375px, 14px, 14px, 1071px, 1024px, '../img/sprite.png', 'form__group_valid$before', );
+$form-popup-form-group-no-valid-before-name: 'form_popup .form__group_no-valid$before';
+$form-popup-form-group-no-valid-before-x: 1045px;
+$form-popup-form-group-no-valid-before-y: 0px;
+$form-popup-form-group-no-valid-before-offset-x: -1045px;
+$form-popup-form-group-no-valid-before-offset-y: 0px;
+$form-popup-form-group-no-valid-before-width: 26px;
+$form-popup-form-group-no-valid-before-height: 26px;
+$form-popup-form-group-no-valid-before-total-width: 1071px;
+$form-popup-form-group-no-valid-before-total-height: 1024px;
+$form-popup-form-group-no-valid-before-image: '../img/sprite.png';
+$form-popup-form-group-no-valid-before: (1045px, 0px, -1045px, 0px, 26px, 26px, 1071px, 1024px, '../img/sprite.png', 'form_popup .form__group_no-valid$before', );
+$form-popup-form-group-valid-before-name: 'form_popup .form__group_valid$before';
+$form-popup-form-group-valid-before-x: 1045px;
+$form-popup-form-group-valid-before-y: 96px;
+$form-popup-form-group-valid-before-offset-x: -1045px;
+$form-popup-form-group-valid-before-offset-y: -96px;
+$form-popup-form-group-valid-before-width: 25px;
+$form-popup-form-group-valid-before-height: 26px;
+$form-popup-form-group-valid-before-total-width: 1071px;
+$form-popup-form-group-valid-before-total-height: 1024px;
+$form-popup-form-group-valid-before-image: '../img/sprite.png';
+$form-popup-form-group-valid-before: (1045px, 96px, -1045px, -96px, 25px, 26px, 1071px, 1024px, '../img/sprite.png', 'form_popup .form__group_valid$before', );
+$info-ico-courses-name: 'info__ico_courses';
+$info-ico-courses-x: 690px;
+$info-ico-courses-y: 230px;
+$info-ico-courses-offset-x: -690px;
+$info-ico-courses-offset-y: -230px;
+$info-ico-courses-width: 120px;
+$info-ico-courses-height: 120px;
+$info-ico-courses-total-width: 1071px;
+$info-ico-courses-total-height: 1024px;
+$info-ico-courses-image: '../img/sprite.png';
+$info-ico-courses: (690px, 230px, -690px, -230px, 120px, 120px, 1071px, 1024px, '../img/sprite.png', 'info__ico_courses', );
+$info-ico-home-name: 'info__ico_home';
+$info-ico-home-x: 690px;
+$info-ico-home-y: 420px;
+$info-ico-home-offset-x: -690px;
+$info-ico-home-offset-y: -420px;
+$info-ico-home-width: 120px;
+$info-ico-home-height: 120px;
+$info-ico-home-total-width: 1071px;
+$info-ico-home-total-height: 1024px;
+$info-ico-home-image: '../img/sprite.png';
+$info-ico-home: (690px, 420px, -690px, -420px, 120px, 120px, 1071px, 1024px, '../img/sprite.png', 'info__ico_home', );
+$info-ico-tours-name: 'info__ico_tours';
+$info-ico-tours-x: 0px;
+$info-ico-tours-y: 690px;
+$info-ico-tours-offset-x: 0px;
+$info-ico-tours-offset-y: -690px;
+$info-ico-tours-width: 120px;
+$info-ico-tours-height: 120px;
+$info-ico-tours-total-width: 1071px;
+$info-ico-tours-total-height: 1024px;
+$info-ico-tours-image: '../img/sprite.png';
+$info-ico-tours: (0px, 690px, 0px, -690px, 120px, 120px, 1071px, 1024px, '../img/sprite.png', 'info__ico_tours', );
+$popup-close-name: 'popup__close';
+$popup-close-x: 1045px;
+$popup-close-y: 288px;
+$popup-close-offset-x: -1045px;
+$popup-close-offset-y: -288px;
+$popup-close-width: 17px;
+$popup-close-height: 17px;
+$popup-close-total-width: 1071px;
+$popup-close-total-height: 1024px;
+$popup-close-image: '../img/sprite.png';
+$popup-close: (1045px, 288px, -1045px, -288px, 17px, 17px, 1071px, 1024px, '../img/sprite.png', 'popup__close', );
+$social-link-fb-hover-name: 'social__link_fb$hover';
+$social-link-fb-hover-x: 690px;
+$social-link-fb-hover-y: 880px;
+$social-link-fb-hover-offset-x: -690px;
+$social-link-fb-hover-offset-y: -880px;
+$social-link-fb-hover-width: 43px;
+$social-link-fb-hover-height: 43px;
+$social-link-fb-hover-total-width: 1071px;
+$social-link-fb-hover-total-height: 1024px;
+$social-link-fb-hover-image: '../img/sprite.png';
+$social-link-fb-hover: (690px, 880px, -690px, -880px, 43px, 43px, 1071px, 1024px, '../img/sprite.png', 'social__link_fb$hover', );
+$social-link-fb-name: 'social__link_fb';
+$social-link-fb-x: 125px;
+$social-link-fb-y: 880px;
+$social-link-fb-offset-x: -125px;
+$social-link-fb-offset-y: -880px;
+$social-link-fb-width: 43px;
+$social-link-fb-height: 43px;
+$social-link-fb-total-width: 1071px;
+$social-link-fb-total-height: 1024px;
+$social-link-fb-image: '../img/sprite.png';
+$social-link-fb: (125px, 880px, -125px, -880px, 43px, 43px, 1071px, 1024px, '../img/sprite.png', 'social__link_fb', );
+$social-link-twitter-hover-name: 'social__link_twitter$hover';
+$social-link-twitter-hover-x: 238px;
+$social-link-twitter-hover-y: 880px;
+$social-link-twitter-hover-offset-x: -238px;
+$social-link-twitter-hover-offset-y: -880px;
+$social-link-twitter-hover-width: 43px;
+$social-link-twitter-hover-height: 43px;
+$social-link-twitter-hover-total-width: 1071px;
+$social-link-twitter-hover-total-height: 1024px;
+$social-link-twitter-hover-image: '../img/sprite.png';
+$social-link-twitter-hover: (238px, 880px, -238px, -880px, 43px, 43px, 1071px, 1024px, '../img/sprite.png', 'social__link_twitter$hover', );
+$social-link-twitter-name: 'social__link_twitter';
+$social-link-twitter-x: 351px;
+$social-link-twitter-y: 880px;
+$social-link-twitter-offset-x: -351px;
+$social-link-twitter-offset-y: -880px;
+$social-link-twitter-width: 43px;
+$social-link-twitter-height: 43px;
+$social-link-twitter-total-width: 1071px;
+$social-link-twitter-total-height: 1024px;
+$social-link-twitter-image: '../img/sprite.png';
+$social-link-twitter: (351px, 880px, -351px, -880px, 43px, 43px, 1071px, 1024px, '../img/sprite.png', 'social__link_twitter', );
+$social-link-vk-hover-name: 'social__link_vk$hover';
+$social-link-vk-hover-x: 464px;
+$social-link-vk-hover-y: 880px;
+$social-link-vk-hover-offset-x: -464px;
+$social-link-vk-hover-offset-y: -880px;
+$social-link-vk-hover-width: 43px;
+$social-link-vk-hover-height: 43px;
+$social-link-vk-hover-total-width: 1071px;
+$social-link-vk-hover-total-height: 1024px;
+$social-link-vk-hover-image: '../img/sprite.png';
+$social-link-vk-hover: (464px, 880px, -464px, -880px, 43px, 43px, 1071px, 1024px, '../img/sprite.png', 'social__link_vk$hover', );
+$social-link-vk-name: 'social__link_vk';
+$social-link-vk-x: 577px;
+$social-link-vk-y: 880px;
+$social-link-vk-offset-x: -577px;
+$social-link-vk-offset-y: -880px;
+$social-link-vk-width: 43px;
+$social-link-vk-height: 43px;
+$social-link-vk-total-width: 1071px;
+$social-link-vk-total-height: 1024px;
+$social-link-vk-image: '../img/sprite.png';
+$social-link-vk: (577px, 880px, -577px, -880px, 43px, 43px, 1071px, 1024px, '../img/sprite.png', 'social__link_vk', );
+$title-after-name: 'title$after';
+$title-after-x: 803px;
+$title-after-y: 880px;
+$title-after-offset-x: -803px;
+$title-after-offset-y: -880px;
+$title-after-width: 88px;
+$title-after-height: 8px;
+$title-after-total-width: 1071px;
+$title-after-total-height: 1024px;
+$title-after-image: '../img/sprite.png';
+$title-after: (803px, 880px, -803px, -880px, 88px, 8px, 1071px, 1024px, '../img/sprite.png', 'title$after', );
+$title-white-after-name: 'title_white$after';
+$title-white-after-x: 690px;
+$title-white-after-y: 610px;
+$title-white-after-offset-x: -690px;
+$title-white-after-offset-y: -610px;
+$title-white-after-width: 88px;
+$title-white-after-height: 8px;
+$title-white-after-total-width: 1071px;
+$title-white-after-total-height: 1024px;
+$title-white-after-image: '../img/sprite.png';
+$title-white-after: (690px, 610px, -690px, -610px, 88px, 8px, 1071px, 1024px, '../img/sprite.png', 'title_white$after', );
+$university-ico-columbia-ie-name: 'university__ico_columbia-ie';
+$university-ico-columbia-ie-x: 460px;
+$university-ico-columbia-ie-y: 230px;
+$university-ico-columbia-ie-offset-x: -460px;
+$university-ico-columbia-ie-offset-y: -230px;
+$university-ico-columbia-ie-width: 160px;
+$university-ico-columbia-ie-height: 160px;
+$university-ico-columbia-ie-total-width: 1071px;
+$university-ico-columbia-ie-total-height: 1024px;
+$university-ico-columbia-ie-image: '../img/sprite.png';
+$university-ico-columbia-ie: (460px, 230px, -460px, -230px, 160px, 160px, 1071px, 1024px, '../img/sprite.png', 'university__ico_columbia-ie', );
+$university-ico-columbia-name: 'university__ico_columbia';
+$university-ico-columbia-x: 460px;
+$university-ico-columbia-y: 0px;
+$university-ico-columbia-offset-x: -460px;
+$university-ico-columbia-offset-y: 0px;
+$university-ico-columbia-width: 160px;
+$university-ico-columbia-height: 160px;
+$university-ico-columbia-total-width: 1071px;
+$university-ico-columbia-total-height: 1024px;
+$university-ico-columbia-image: '../img/sprite.png';
+$university-ico-columbia: (460px, 0px, -460px, 0px, 160px, 160px, 1071px, 1024px, '../img/sprite.png', 'university__ico_columbia', );
+$university-ico-fisher-ie-name: 'university__ico_fisher-ie';
+$university-ico-fisher-ie-x: 230px;
+$university-ico-fisher-ie-y: 230px;
+$university-ico-fisher-ie-offset-x: -230px;
+$university-ico-fisher-ie-offset-y: -230px;
+$university-ico-fisher-ie-width: 160px;
+$university-ico-fisher-ie-height: 160px;
+$university-ico-fisher-ie-total-width: 1071px;
+$university-ico-fisher-ie-total-height: 1024px;
+$university-ico-fisher-ie-image: '../img/sprite.png';
+$university-ico-fisher-ie: (230px, 230px, -230px, -230px, 160px, 160px, 1071px, 1024px, '../img/sprite.png', 'university__ico_fisher-ie', );
+$university-ico-fisher-name: 'university__ico_fisher';
+$university-ico-fisher-x: 0px;
+$university-ico-fisher-y: 230px;
+$university-ico-fisher-offset-x: 0px;
+$university-ico-fisher-offset-y: -230px;
+$university-ico-fisher-width: 160px;
+$university-ico-fisher-height: 160px;
+$university-ico-fisher-total-width: 1071px;
+$university-ico-fisher-total-height: 1024px;
+$university-ico-fisher-image: '../img/sprite.png';
+$university-ico-fisher: (0px, 230px, 0px, -230px, 160px, 160px, 1071px, 1024px, '../img/sprite.png', 'university__ico_fisher', );
+$university-ico-harvard-ie-name: 'university__ico_harvard-ie';
+$university-ico-harvard-ie-x: 230px;
+$university-ico-harvard-ie-y: 0px;
+$university-ico-harvard-ie-offset-x: -230px;
+$university-ico-harvard-ie-offset-y: 0px;
+$university-ico-harvard-ie-width: 160px;
+$university-ico-harvard-ie-height: 160px;
+$university-ico-harvard-ie-total-width: 1071px;
+$university-ico-harvard-ie-total-height: 1024px;
+$university-ico-harvard-ie-image: '../img/sprite.png';
+$university-ico-harvard-ie: (230px, 0px, -230px, 0px, 160px, 160px, 1071px, 1024px, '../img/sprite.png', 'university__ico_harvard-ie', );
+$university-ico-harvard-name: 'university__ico_harvard';
+$university-ico-harvard-x: 0px;
+$university-ico-harvard-y: 460px;
+$university-ico-harvard-offset-x: 0px;
+$university-ico-harvard-offset-y: -460px;
+$university-ico-harvard-width: 160px;
+$university-ico-harvard-height: 160px;
+$university-ico-harvard-total-width: 1071px;
+$university-ico-harvard-total-height: 1024px;
+$university-ico-harvard-image: '../img/sprite.png';
+$university-ico-harvard: (0px, 460px, 0px, -460px, 160px, 160px, 1071px, 1024px, '../img/sprite.png', 'university__ico_harvard', );
+$university-ico-mass-ie-name: 'university__ico_mass-ie';
+$university-ico-mass-ie-x: 230px;
+$university-ico-mass-ie-y: 460px;
+$university-ico-mass-ie-offset-x: -230px;
+$university-ico-mass-ie-offset-y: -460px;
+$university-ico-mass-ie-width: 160px;
+$university-ico-mass-ie-height: 160px;
+$university-ico-mass-ie-total-width: 1071px;
+$university-ico-mass-ie-total-height: 1024px;
+$university-ico-mass-ie-image: '../img/sprite.png';
+$university-ico-mass-ie: (230px, 460px, -230px, -460px, 160px, 160px, 1071px, 1024px, '../img/sprite.png', 'university__ico_mass-ie', );
+$university-ico-mass-name: 'university__ico_mass';
+$university-ico-mass-x: 460px;
+$university-ico-mass-y: 460px;
+$university-ico-mass-offset-x: -460px;
+$university-ico-mass-offset-y: -460px;
+$university-ico-mass-width: 160px;
+$university-ico-mass-height: 160px;
+$university-ico-mass-total-width: 1071px;
+$university-ico-mass-total-height: 1024px;
+$university-ico-mass-image: '../img/sprite.png';
+$university-ico-mass: (460px, 460px, -460px, -460px, 160px, 160px, 1071px, 1024px, '../img/sprite.png', 'university__ico_mass', );
+$university-ico-ny-ie-name: 'university__ico_ny-ie';
+$university-ico-ny-ie-x: 0px;
+$university-ico-ny-ie-y: 0px;
+$university-ico-ny-ie-offset-x: 0px;
+$university-ico-ny-ie-offset-y: 0px;
+$university-ico-ny-ie-width: 160px;
+$university-ico-ny-ie-height: 160px;
+$university-ico-ny-ie-total-width: 1071px;
+$university-ico-ny-ie-total-height: 1024px;
+$university-ico-ny-ie-image: '../img/sprite.png';
+$university-ico-ny-ie: (0px, 0px, 0px, 0px, 160px, 160px, 1071px, 1024px, '../img/sprite.png', 'university__ico_ny-ie', );
+$university-ico-ny-name: 'university__ico_ny';
+$university-ico-ny-x: 690px;
+$university-ico-ny-y: 0px;
+$university-ico-ny-offset-x: -690px;
+$university-ico-ny-offset-y: 0px;
+$university-ico-ny-width: 160px;
+$university-ico-ny-height: 160px;
+$university-ico-ny-total-width: 1071px;
+$university-ico-ny-total-height: 1024px;
+$university-ico-ny-image: '../img/sprite.png';
+$university-ico-ny: (690px, 0px, -690px, 0px, 160px, 160px, 1071px, 1024px, '../img/sprite.png', 'university__ico_ny', );
+$work-ico-chat-name: 'work__ico_chat';
+$work-ico-chat-x: 190px;
+$work-ico-chat-y: 690px;
+$work-ico-chat-offset-x: -190px;
+$work-ico-chat-offset-y: -690px;
+$work-ico-chat-width: 106px;
+$work-ico-chat-height: 106px;
+$work-ico-chat-total-width: 1071px;
+$work-ico-chat-total-height: 1024px;
+$work-ico-chat-image: '../img/sprite.png';
+$work-ico-chat: (190px, 690px, -190px, -690px, 106px, 106px, 1071px, 1024px, '../img/sprite.png', 'work__ico_chat', );
+$work-ico-plane-name: 'work__ico_plane';
+$work-ico-plane-x: 718px;
+$work-ico-plane-y: 690px;
+$work-ico-plane-offset-x: -718px;
+$work-ico-plane-offset-y: -690px;
+$work-ico-plane-width: 106px;
+$work-ico-plane-height: 106px;
+$work-ico-plane-total-width: 1071px;
+$work-ico-plane-total-height: 1024px;
+$work-ico-plane-image: '../img/sprite.png';
+$work-ico-plane: (718px, 690px, -718px, -690px, 106px, 106px, 1071px, 1024px, '../img/sprite.png', 'work__ico_plane', );
+$work-ico-post-name: 'work__ico_post';
+$work-ico-post-x: 366px;
+$work-ico-post-y: 690px;
+$work-ico-post-offset-x: -366px;
+$work-ico-post-offset-y: -690px;
+$work-ico-post-width: 106px;
+$work-ico-post-height: 106px;
+$work-ico-post-total-width: 1071px;
+$work-ico-post-total-height: 1024px;
+$work-ico-post-image: '../img/sprite.png';
+$work-ico-post: (366px, 690px, -366px, -690px, 106px, 106px, 1071px, 1024px, '../img/sprite.png', 'work__ico_post', );
+$work-ico-purse-name: 'work__ico_purse';
+$work-ico-purse-x: 542px;
+$work-ico-purse-y: 690px;
+$work-ico-purse-offset-x: -542px;
+$work-ico-purse-offset-y: -690px;
+$work-ico-purse-width: 106px;
+$work-ico-purse-height: 106px;
+$work-ico-purse-total-width: 1071px;
+$work-ico-purse-total-height: 1024px;
+$work-ico-purse-image: '../img/sprite.png';
+$work-ico-purse: (542px, 690px, -542px, -690px, 106px, 106px, 1071px, 1024px, '../img/sprite.png', 'work__ico_purse', );
+$spritesheet-width: 1071px;
+$spritesheet-height: 1024px;
+$spritesheet-image: '../img/sprite.png';
+$spritesheet-sprites: ($description-ico-air, $description-ico-books, $description-ico-calendar, $description-ico-clock, $description-ico-cup, $description-ico-list, $description-ico-message, $description-ico-rucksack, $description-ico-student, $description-ico-wi-fi, $form-group-no-valid-before, $form-group-valid-before, $form-popup-form-group-no-valid-before, $form-popup-form-group-valid-before, $info-ico-courses, $info-ico-home, $info-ico-tours, $popup-close, $social-link-fb-hover, $social-link-fb, $social-link-twitter-hover, $social-link-twitter, $social-link-vk-hover, $social-link-vk, $title-after, $title-white-after, $university-ico-columbia-ie, $university-ico-columbia, $university-ico-fisher-ie, $university-ico-fisher, $university-ico-harvard-ie, $university-ico-harvard, $university-ico-mass-ie, $university-ico-mass, $university-ico-ny-ie, $university-ico-ny, $work-ico-chat, $work-ico-plane, $work-ico-post, $work-ico-purse, );
+$spritesheet: (1071px, 1024px, '../img/sprite.png', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
 
 Example usage in HTML:
 
@@ -16,243 +483,43 @@ To change `display` (e.g. `display: inline-block;`), we suggest using a common C
 // HTML
 <i class="icon icon-home"></i>
 */
-.description__ico_air {
-  background-image: url(../img/sprite.png);
-  background-position: -1045px -192px;
-  width: 25px;
-  height: 26px;
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
 }
-.description__ico_books {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -880px;
-  width: 55px;
-  height: 55px;
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
 }
-.description__ico_calendar {
-  background-image: url(../img/sprite.png);
-  background-position: -920px -500px;
-  width: 55px;
-  height: 55px;
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
 }
-.description__ico_clock {
-  background-image: url(../img/sprite.png);
-  background-position: -920px -750px;
-  width: 55px;
-  height: 55px;
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
 }
-.description__ico_cup {
-  background-image: url(../img/sprite.png);
-  background-position: -920px -625px;
-  width: 55px;
-  height: 55px;
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
 }
-.description__ico_list {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -1005px;
-  width: 27px;
-  height: 19px;
-}
-.description__ico_message {
-  background-image: url(../img/sprite.png);
-  background-position: -920px -375px;
-  width: 55px;
-  height: 55px;
-}
-.description__ico_rucksack {
-  background-image: url(../img/sprite.png);
-  background-position: -920px -250px;
-  width: 55px;
-  height: 55px;
-}
-.description__ico_student {
-  background-image: url(../img/sprite.png);
-  background-position: -920px -125px;
-  width: 55px;
-  height: 55px;
-}
-.description__ico_wi-fi {
-  background-image: url(../img/sprite.png);
-  background-position: -920px 0px;
-  width: 55px;
-  height: 55px;
-}
-.form__group_no-valid:before {
-  background-image: url(../img/sprite.png);
-  background-position: -1045px -459px;
-  width: 13px;
-  height: 13px;
-}
-.form__group_valid:before {
-  background-image: url(../img/sprite.png);
-  background-position: -1045px -375px;
-  width: 14px;
-  height: 14px;
-}
-.form_popup .form__group_no-valid:before {
-  background-image: url(../img/sprite.png);
-  background-position: -1045px 0px;
-  width: 26px;
-  height: 26px;
-}
-.form_popup .form__group_valid:before {
-  background-image: url(../img/sprite.png);
-  background-position: -1045px -96px;
-  width: 25px;
-  height: 26px;
-}
-.info__ico_courses {
-  background-image: url(../img/sprite.png);
-  background-position: -690px -230px;
-  width: 120px;
-  height: 120px;
-}
-.info__ico_home {
-  background-image: url(../img/sprite.png);
-  background-position: -690px -420px;
-  width: 120px;
-  height: 120px;
-}
-.info__ico_tours {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -690px;
-  width: 120px;
-  height: 120px;
-}
-.popup__close {
-  background-image: url(../img/sprite.png);
-  background-position: -1045px -288px;
-  width: 17px;
-  height: 17px;
-}
-.social__link_fb:hover {
-  background-image: url(../img/sprite.png);
-  background-position: -690px -880px;
-  width: 43px;
-  height: 43px;
-}
-.social__link_fb {
-  background-image: url(../img/sprite.png);
-  background-position: -125px -880px;
-  width: 43px;
-  height: 43px;
-}
-.social__link_twitter:hover {
-  background-image: url(../img/sprite.png);
-  background-position: -238px -880px;
-  width: 43px;
-  height: 43px;
-}
-.social__link_twitter {
-  background-image: url(../img/sprite.png);
-  background-position: -351px -880px;
-  width: 43px;
-  height: 43px;
-}
-.social__link_vk:hover {
-  background-image: url(../img/sprite.png);
-  background-position: -464px -880px;
-  width: 43px;
-  height: 43px;
-}
-.social__link_vk {
-  background-image: url(../img/sprite.png);
-  background-position: -577px -880px;
-  width: 43px;
-  height: 43px;
-}
-.title:after {
-  background-image: url(../img/sprite.png);
-  background-position: -803px -880px;
-  width: 88px;
-  height: 8px;
-}
-.title_white:after {
-  background-image: url(../img/sprite.png);
-  background-position: -690px -610px;
-  width: 88px;
-  height: 8px;
-}
-.university__ico_columbia:hover {
-  background-image: url(../img/sprite.png);
-  background-position: -460px -230px;
-  width: 160px;
-  height: 160px;
-}
-.university__ico_columbia {
-  background-image: url(../img/sprite.png);
-  background-position: -460px 0px;
-  width: 160px;
-  height: 160px;
-}
-.university__ico_fisher:hover {
-  background-image: url(../img/sprite.png);
-  background-position: -230px -230px;
-  width: 160px;
-  height: 160px;
-}
-.university__ico_fisher {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -230px;
-  width: 160px;
-  height: 160px;
-}
-.university__ico_harvard:hover {
-  background-image: url(../img/sprite.png);
-  background-position: -230px 0px;
-  width: 160px;
-  height: 160px;
-}
-.university__ico_harvard {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -460px;
-  width: 160px;
-  height: 160px;
-}
-.university__ico_mass:hover {
-  background-image: url(../img/sprite.png);
-  background-position: -230px -460px;
-  width: 160px;
-  height: 160px;
-}
-.university__ico_mass {
-  background-image: url(../img/sprite.png);
-  background-position: -460px -460px;
-  width: 160px;
-  height: 160px;
-}
-.university__ico_ny:hover {
-  background-image: url(../img/sprite.png);
-  background-position: 0px 0px;
-  width: 160px;
-  height: 160px;
-}
-.university__ico_ny {
-  background-image: url(../img/sprite.png);
-  background-position: -690px 0px;
-  width: 160px;
-  height: 160px;
-}
-.work__ico_chat {
-  background-image: url(../img/sprite.png);
-  background-position: -190px -690px;
-  width: 106px;
-  height: 106px;
-}
-.work__ico_plane {
-  background-image: url(../img/sprite.png);
-  background-position: -718px -690px;
-  width: 106px;
-  height: 106px;
-}
-.work__ico_post {
-  background-image: url(../img/sprite.png);
-  background-position: -366px -690px;
-  width: 106px;
-  height: 106px;
-}
-.work__ico_purse {
-  background-image: url(../img/sprite.png);
-  background-position: -542px -690px;
-  width: 106px;
-  height: 106px;
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
 }

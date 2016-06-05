@@ -40,6 +40,12 @@
     display: inline-block;
     margin-right: 21px;
     vertical-align: middle;
+    width: 55px;
+    height: 55px;
+
+    $mods: 'clock', 'message', 'calendar', 'wi-fi', 'student', 'cup', 'books', 'rucksack', 'list', 'air';
+
+    @include svg-ico($mods);
 
     &_list{
       margin-right: 13px;
@@ -58,6 +64,11 @@
     vertical-align: middle;
     font-family: $lato-bold;
     text-decoration: underline;
+    transition: 0.2s;
+
+    &:hover {
+      color: $blue;
+    }
 
     &_air{
       margin-top: 16px;

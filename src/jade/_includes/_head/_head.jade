@@ -29,3 +29,6 @@ head(prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#")
     meta(name='msapplication-TileImage', content='favicon/ms-icon-144x144.png')
 
     link(rel='stylesheet' type='text/css' href='css/styles.css?t=#{+new Date()}')
+    <![if IE]>
+    link(rel='stylesheet' type='text/css' href='css/ie.css?t=#{+new Date()}')
+    <![endif]>

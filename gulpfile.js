@@ -106,23 +106,7 @@ gulp.task('sprite', function () {
         .pipe(spritesmith({
             imgName: '../img/sprite.png',
             cssName: '_sprite.scss',
-            cssFormat: 'css',
-            cssOpts: {
-                cssSelector: function (item) {
-                    var result = '.' + item.name,
-                        index;
-
-                    while (true) {
-                        index = result.indexOf('$');
-
-                        if (index !== -1) {
-                            result = result.replace(result.charAt(index), ':');
-                        } else break;
-                    }
-
-                    return result;
-                }
-            },
+            cssFormat: 'scss',
             padding: 70
         }));
     spriteData.img

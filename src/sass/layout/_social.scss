@@ -16,5 +16,11 @@
     display: block;
     border-radius: 50%;
     background-color: white;
+    width: 43px;
+    height: 43px;
+
+    $mods: 'vk', 'fb', 'twitter';
+
+    @include svg-ico($mods);
   }
 }

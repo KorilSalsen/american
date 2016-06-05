@@ -25,11 +25,31 @@
   }
 }
 
-@mixin inlineblock {
+@mixin inlineblock() {
   display: inline-block;
   vertical-align: top;
 }
 
+@mixin svg-ico($mods){
+  background-position: center;
+  background-repeat: no-repeat;
+  background-clip: content-box;
+
+  @each $mod in $mods{
+    &_#{$mod}{
+      background-image: url('../img/svg/#{$mod}.svg');
+    }
+  }
+}
+
+@mixin sprite-string($string){
+  @each $sprite in $spritesheet-sprites {
+    $sprite-name: nth($sprite, 10);
+    @if $sprite-name == $string{
+      @include sprite($sprite);
+    }
+  }
+}
 
 @mixin border-radius($radius: 5px) {
   -webkit-border-radius: $radius;
