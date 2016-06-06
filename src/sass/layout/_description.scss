@@ -60,6 +60,10 @@
     text-decoration: underline;
     transition: 0.2s;
 
+    &:visited {
+      color: $gray;
+    }
+
     &:hover {
       color: $blue;
     }

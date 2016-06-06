@@ -1,6 +1,6 @@
 .description__ico_air {
   
-  background-position: 73.93617021276596% 92.1875%;
+  background-position: 6.648936170212766% 100%;
 }
 
 .description__ico_air  {
@@ -10,7 +10,7 @@
 
 .description__ico_books {
   
-  background-position: 78.32369942196532% 82.47422680412372%;
+  background-position: 100% 34.70031545741325%;
 }
 
 .description__ico_books  {
@@ -20,7 +20,7 @@
 
 .description__ico_calendar {
   
-  background-position: 62.42774566473989% 82.47422680412372%;
+  background-position: 62.42774566473989% 75.70977917981072%;
 }
 
 .description__ico_calendar  {
@@ -30,7 +30,7 @@
 
 .description__ico_clock {
   
-  background-position: 100% 0;
+  background-position: 78.32369942196532% 75.70977917981072%;
 }
 
 .description__ico_clock  {
@@ -40,7 +40,7 @@
 
 .description__ico_cup {
   
-  background-position: 46.53179190751445% 82.47422680412372%;
+  background-position: 100% 17.350157728706623%;
 }
 
 .description__ico_cup  {
@@ -50,7 +50,7 @@
 
 .description__ico_list {
   
-  background-position: 98.1283422459893% 93.57798165137615%;
+  background-position: 98.1283422459893% 86.68555240793201%;
 }
 
 .description__ico_list  {
@@ -60,7 +60,7 @@
 
 .description__ico_message {
   
-  background-position: 30.63583815028902% 82.47422680412372%;
+  background-position: 100% 0;
 }
 
 .description__ico_message  {
@@ -70,7 +70,7 @@
 
 .description__ico_rucksack {
   
-  background-position: 100% 37.80068728522337%;
+  background-position: 30.63583815028902% 75.70977917981072%;
 }
 
 .description__ico_rucksack  {
@@ -80,7 +80,7 @@
 
 .description__ico_student {
   
-  background-position: 100% 18.900343642611684%;
+  background-position: 100% 52.05047318611987%;
 }
 
 .description__ico_student  {
@@ -90,7 +90,7 @@
 
 .description__ico_wi-fi {
   
-  background-position: 100% 56.70103092783505%;
+  background-position: 46.53179190751445% 75.70977917981072%;
 }
 
 .description__ico_wi-fi  {
@@ -98,9 +98,33 @@
   height: 55px;
 }
 
+.description__link:hover .description__ico_air,
+.description__link:hover .description__ico_air {
+  
+  background-position: 0 100%;
+}
+
+.description__link :hover .description__ico_air,
+.description__link:hover .description__ico_air  {
+  width: 25px;
+  height: 26px;
+}
+
+.description__link:hover .description__ico_list,
+.description__link:hover .description__ico_list {
+  
+  background-position: 74.33155080213903% 83.56940509915015%;
+}
+
+.description__link :hover .description__ico_list,
+.description__link:hover .description__ico_list  {
+  width: 27px;
+  height: 19px;
+}
+
 .info__ico_courses {
   
-  background-position: 0 53.097345132743364%;
+  background-position: 0 47.61904761904762%;
 }
 
 .info__ico_courses  {
@@ -130,7 +154,7 @@
 
 .markpoint {
   
-  background-position: 91.05263157894737% 96.83544303797468%;
+  background-position: 91.05263157894737% 89.47368421052632%;
 }
 
 .markpoint  {
@@ -138,10 +162,9 @@
   height: 30px;
 }
 
-.social__link_fb,
-.social__link_fb\:regular {
+.social__link_fb{
   
-  background-position: 53.63128491620112% 97.35973597359735%;
+  background-position: 65.64245810055866% 89.66565349544074%;
 }
 
 .social__link_fb  {
@@ -149,22 +172,19 @@
   height: 43px;
 }
 
-.social__link_fb:hover,
-.social__link_fb\:hover {
+.social__link_fb:hover {
   
-  background-position: 65.64245810055866% 97.35973597359735%;
+  background-position: 96.64804469273743% 66.8693009118541%;
 }
 
-.social__link_fb :hover,
-.social__link_fb\:hover  {
+.social__link_fb :hover {
   width: 43px;
   height: 43px;
 }
 
-.social__link_twitter,
-.social__link_twitter\:regular {
+.social__link_twitter {
   
-  background-position: 41.62011173184357% 97.35973597359735%;
+  background-position: 96.64804469273743% 79.93920972644376%;
 }
 
 .social__link_twitter  {
@@ -172,22 +192,19 @@
   height: 43px;
 }
 
-.social__link_twitter:hover,
-.social__link_twitter\:hover {
+.social__link_twitter:hover{
   
-  background-position: 29.608938547486034% 97.35973597359735%;
+  background-position: 29.608938547486034% 89.66565349544074%;
 }
 
-.social__link_twitter :hover,
-.social__link_twitter\:hover  {
+.social__link_twitter :hover  {
   width: 43px;
   height: 43px;
 }
 
-.social__link_vk,
-.social__link_vk\:regular {
+.social__link_vk {
   
-  background-position: 96.64804469273743% 72.60726072607261%;
+  background-position: 41.62011173184357% 89.66565349544074%;
 }
 
 .social__link_vk  {
@@ -195,45 +212,39 @@
   height: 43px;
 }
 
-.social__link_vk:hover,
-.social__link_vk\:hover {
+.social__link_vk:hover {
   
-  background-position: 96.64804469273743% 86.79867986798679%;
+  background-position: 53.63128491620112% 89.66565349544074%;
 }
 
-.social__link_vk :hover,
-.social__link_vk\:hover  {
+.social__link_vk :hover {
   width: 43px;
   height: 43px;
 }
 
-.title_white:after,
-.title_white\:after {
-  
-  background-position: 76.6773162939297% 65.08875739644971%;
+.title:after {
+
+  background-position: 76.6773162939297% 58.24175824175824%;
 }
 
-.title_white :after,
-.title_white\:after  {
+.title :after {
   width: 88px;
   height: 8px;
 }
 
-.title:after,
-.title\:after {
+.title_white:after{
   
-  background-position: 76.6773162939297% 62.72189349112426%;
+  background-position: 76.6773162939297% 60.43956043956044%;
 }
 
-.title :after,
-.title\:after  {
+.title_white :after  {
   width: 88px;
   height: 8px;
 }
 
 .work__ico_chat {
   
-  background-position: 81.35593220338983% 44.166666666666664%;
+  background-position: 81.35593220338983% 0;
 }
 
 .work__ico_chat  {
@@ -243,7 +254,7 @@
 
 .work__ico_plane {
   
-  background-position: 0 100%;
+  background-position: 40.67796610169491% 45.11278195488722%;
 }
 
 .work__ico_plane  {
@@ -253,7 +264,7 @@
 
 .work__ico_post {
   
-  background-position: 81.35593220338983% 0;
+  background-position: 0 90.22556390977444%;
 }
 
 .work__ico_post  {
@@ -263,7 +274,7 @@
 
 .work__ico_purse {
   
-  background-position: 40.67796610169491% 50%;
+  background-position: 81.35593220338983% 39.849624060150376%;
 }
 
 .work__ico_purse  {
