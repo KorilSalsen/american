@@ -1,4 +1,9 @@
 .logo {
+  width: 141px;
   display: inline-block;
   vertical-align: middle;
+
+  &_footer{
+    @include opacity(0.21);
+  }
 }

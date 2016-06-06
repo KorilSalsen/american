@@ -44,6 +44,8 @@
 
       &:before {
         display: block;
+
+        @include sprite-string('form__group_valid$before');
       }
     }
 
@@ -55,6 +57,8 @@
 
       &:before {
         display: block;
+
+        @include sprite-string('form__group_no-valid$before');
       }
     }
 
@@ -91,6 +95,8 @@
 
           &:before {
             right: 7px;
+
+        @include sprite-string('form_popup .form__group_valid$before');
           }
         }
 
@@ -101,6 +107,8 @@
 
           &:before {
             right: 7px;
+
+        @include sprite-string('form_popup .form__group_no-valid$before');
           }
         }
 

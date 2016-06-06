@@ -24,12 +24,6 @@
   &__ico {
     display: inline-block;
     line-height: 0;
-    width: 160px;
-    height: 160px;
-
-    $mods: 'tours', 'home', 'courses';
-
-    @include svg-ico($mods);
 
   }
 

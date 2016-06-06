@@ -37,3 +37,8 @@ body, html {
     height: 243px;
   }
 }
+
+.ico, .title:after{
+  background-image: url('../img/sprite.svg');
+  background-repeat: no-repeat;
+}

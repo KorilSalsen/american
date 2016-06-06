@@ -1,14 +1,14 @@
 footer.footer
     .container
         .footer__social
-            a.logo(href='/')
-                img.logo__img(src='img/logo_light.png', alt='Academic adventures')
+            a.logo.logo_footer(href='/')
+                img.logo__img(src='img/logo_light.svg', alt='Academic adventures')
             .social
                 ul.social__list
                     - var socials = ['fb', 'vk', 'twitter']
                     each social in socials
                         li.social__list-item
-                            a.social__link(class="social__link_#{social}", href='//#{social}.com', target="_blank") #{social}
+                            a.ico.social__link(class="social__link_#{social}", href='//#{social}.com', target="_blank") #{social}
         .footer__info
             .footer__col.footer__col_about
                 .footer__title About Us

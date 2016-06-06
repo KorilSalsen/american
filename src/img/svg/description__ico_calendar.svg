@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 55 55" enable-background="new 0 0 55 55" xml:space="preserve">
+<g id="Layer_1" display="none">
+	
+		<image display="inline" overflow="visible" width="55" height="55" xlink:href="../sprites/description__ico_calendar.png"  transform="matrix(0.9999 0 0 0.9999 0 0)">
+	</image>
+</g>
+<g id="Layer_2">
+	<path fill="#3E99D4" d="M43.8,9.8h-6.4V6c0-0.6-0.5-1.1-1-1.1c-0.6,0-1.1,0.5-1.1,1.1v3.9H12.5V6c0-0.6-0.5-1.1-1.1-1.1
+		c-0.5,0-1,0.5-1,1.1v3.9H4c-0.6-0.1-1.1,0.4-1.1,1v32c0,0.5,0.5,1,1.1,1h39.9c0.6,0,1.1-0.5,1.1-1.1V10.9
+		C44.9,10.3,44.4,9.8,43.8,9.8z M26.8,22v5H21v-5H26.8z M42.8,27h-5.9v-5h5.8v5H42.8z M34.8,27H29v-5h5.8L34.8,27L34.8,27z M21,29.1
+		h5.8v5H21C21,34.1,21,29.1,21,29.1z M21,36.3h5.8v5.5H21C21,41.8,21,36.3,21,36.3z M29,36.3h5.8v5.5H29C29,41.8,29,36.3,29,36.3z
+		 M29,34.2v-5h5.8v5H29z M36.9,29.1h5.8v5h-5.8V29.1z M10.4,11.9v3.9c0,0.6,0.5,1.1,1.1,1.1s1.1-0.5,1.1-1.1v-3.9h22.8v3.9
+		c0,0.6,0.5,1.1,1.1,1.1c0.6,0,1.1-0.5,1.1-1.1v-3.9h5.3v8H5v-8H10.4z M5,22h13.8v19.8H5V22z M36.9,41.8v-5.5h5.8v5.5H36.9z"/>
+</g>
+</svg>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 55 55" enable-background="new 0 0 55 55" xml:space="preserve">
+<g id="Layer_1" display="none">
+	
+		<image display="inline" overflow="visible" width="55" height="55" xlink:href="../sprites/description__ico_clock.png"  transform="matrix(0.9999 0 0 0.9999 0 0)">
+	</image>
+</g>
+<g id="Layer_2">
+	<path fill="#3E99D4" d="M41.3,17.1c-2.1-4.8-5.6-8.4-10.6-10.5C28.4,5.5,25.8,5,23.2,5s-5.2,0.5-7.7,1.6C10.6,8.7,7,12.2,5,17.1
+		c-1.1,2.5-1.6,5-1.6,7.7S3.9,30,5,32.5C7,37.3,10.6,40.9,15.4,43c2.5,1.1,5,1.6,7.7,1.6s5.2-0.5,7.7-1.6c4.9-2.1,8.4-5.6,10.6-10.5
+		c1.1-2.5,1.6-5,1.6-7.7C42.9,22.1,42.4,19.5,41.3,17.1z M38.2,33.5c-1.6,2.7-3.7,4.7-6.3,6.3c-2.7,1.6-5.5,2.4-8.7,2.4
+		c-2.4,0-4.6-0.5-6.7-1.4c-2.2-0.9-4-2.2-5.5-3.7c-1.6-1.6-2.9-3.5-3.8-5.6S5.7,27,5.7,24.8c0-3.2,0.8-6,2.3-8.7
+		c1.6-2.7,3.7-4.7,6.3-6.3s5.5-2.4,8.7-2.4s6,0.8,8.7,2.4s4.8,3.7,6.3,6.3c1.6,2.7,2.4,5.5,2.4,8.7S39.8,30.8,38.2,33.5z"/>
+	<path fill="#3E99D4" d="M24.3,24.6V13.4c0-0.7-0.6-1.2-1.3-1.2c-0.6,0-1.2,0.5-1.2,1.2v11.4c0,0,0,0.1,0,0.2c0,0.4,0.1,0.7,0.3,1
+		l6.4,6.4c0.4,0.4,1.2,0.4,1.7,0c0.5-0.5,0.5-1.2,0-1.7L24.3,24.6z"/>
+</g>
+</svg>

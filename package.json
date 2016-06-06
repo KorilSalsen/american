@@ -16,6 +16,7 @@
     "gulp-cssnano": "*",
     "gulp-plumber": "*",
     "gulp-rename": "^1.2.2",
+    "gulp-svg-sprite": "^1.3.1",
     "gulp-watch": "*",
     "gulp.spritesmith": "^6.2.1"
   },

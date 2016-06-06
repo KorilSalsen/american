@@ -12,7 +12,7 @@ block main
                     - var text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. justo commodo.'
                     each image, i in images
                         li.info__list-item
-                            i.info__ico(class="info__ico_#{image}")
+                            i.ico.info__ico(class="info__ico_#{image}")
                             .info__title #{titles[i]}
                             .info__text #{text}
                             a.button.button_blue(href='') More
@@ -35,7 +35,7 @@ block main
                     - var text = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
                     each element in elements
                         li.work__list-item
-                            i.work__ico(class="work__ico_#{element}")
+                            i.ico.work__ico(class="work__ico_#{element}")
                             .work__text #{text}
         article.rewiews
             .container

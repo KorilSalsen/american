@@ -34,5 +34,7 @@
     position: absolute;
     top: 6px;
     right: 5px;
+
+    @include sprite-string('popup__close');
   }
 }
