@@ -23,6 +23,18 @@ body, html {
 
     @include justify;
   }
+
+  &_relative {
+    position: relative;
+  }
+
+  &_absolute {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -470px;
+  }
 }
 
 .wrapper {
@@ -38,7 +50,13 @@ body, html {
   }
 }
 
-.ico, .title:after{
+.ico, .title:after {
   background-image: url('../img/sprite.svg');
   background-repeat: no-repeat;
+}
+
+.map {
+  max-height: 100%;
+  height: 332px;
+  z-index: 1;
 }
