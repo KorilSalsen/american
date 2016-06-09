@@ -14,6 +14,10 @@
     border-bottom: 2px solid $darked-blue;
     background-color: $blue;
 
+    &:hover {
+      background-color: darken($blue, 5%);
+    }
+
     &:active {
       background-color: $darked-blue;
     }
@@ -22,6 +26,10 @@
   &_yellow {
     background-color: $yellow;
     border-bottom: 2px solid $yellow-dark;
+
+    &:hover {
+      background-color: darken($yellow, 5%);
+    }
 
     &:active {
       background-color: $yellow-dark;
