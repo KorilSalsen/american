@@ -105,9 +105,7 @@ var google = google || false;
 
 image = {
     url: 'img/svg/markpoint.svg',
-    size: new google.maps.Size(21, 30),
-    origin: new google.maps.Point(0, 0),
-    anchor: new google.maps.Point(0, 30)
+    scale: 1
 };
 
 if(google){
@@ -263,6 +261,8 @@ if(google){
             ]
         }
     ];
+
+    var image = 'img/markpoint.png';
 
     google.maps.event.addDomListener(window, "load", init);
 

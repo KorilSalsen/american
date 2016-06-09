@@ -5,13 +5,30 @@
   background-position-x: center;
 
   &_students {
-    background-image: url("../img/students.jpg");
+    background-image: url("../img/banner-bg.jpg");
     padding: 76px 0;
     min-height: 331px;
+    overflow: hidden;
+    position: relative;
+
+    &:before{
+      display: block;
+      content: '';
+      background-image: url("../img/students.png");
+      background-repeat: no-repeat;
+      background-position: 100% 10px;
+      position: absolute;
+      width: 940px;
+      top: 0;
+      left: 50%;
+      height: 100%;
+      margin-left: -300px;
+    }
   }
 
   &_courses {
     background-image: url("../img/courses.jpg");
+    background-position-y: 20%;
   }
 
   &_map {
@@ -23,6 +40,7 @@
 
   &_home {
     background-image: url("../img/home.jpg");
+    background-position-y: 20%;
   }
 
   &__description {
@@ -33,6 +51,9 @@
     color: white;
     line-height: 56px;
     width: 55%;
+    z-index: 1;
+    position: relative;
+    text-shadow: 0 0 16px $dark-blue;
 
     &_absolute{
       position: absolute;

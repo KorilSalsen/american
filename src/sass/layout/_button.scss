@@ -9,6 +9,9 @@
   line-height: 12px;
   transition: 0.2s;
   font-family: $lato-heavy;
+  text-shadow: none;
+  z-index: 1;
+  position: relative;
 
   &_blue {
     border-bottom: 2px solid $darked-blue;

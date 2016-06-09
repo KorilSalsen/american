@@ -3,8 +3,23 @@
   padding-top: 79px;
   padding-bottom: 79px;
   min-height: 243px;
-  background-image: url("../img/footer-bg.jpg");
+  background-image: url("../img/application-bg.jpg");
   background-size: cover;
+  position: relative;
+
+  &:before{
+    display: block;
+    content: '';
+    background-image: url("../img/girl.png");
+    background-repeat: no-repeat;
+    background-position: 0 -70px;
+    position: absolute;
+    width: 940px;
+    top: 0;
+    right: 50%;
+    height: 100%;
+    margin-right: -545px;
+  }
 
   &_home, &_courses{
     min-height: 240px;
@@ -21,5 +36,6 @@
     text-align: right;
     padding: 0 19px;
     vertical-align: middle;
+    text-shadow: 0 0 16px $dark-blue;
   }
 }
