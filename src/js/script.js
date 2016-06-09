@@ -103,6 +103,13 @@ function validator() {
 //Google-maps
 var google = google || false;
 
+image = {
+    url: 'img/svg/markpoint.svg',
+    size: new google.maps.Size(21, 30),
+    origin: new google.maps.Point(0, 0),
+    anchor: new google.maps.Point(0, 30)
+};
+
 if(google){
     var styleArr = [
         {
@@ -277,35 +284,35 @@ if(google){
             position: new google.maps.LatLng(42.3540236,-71.0730505,15.88),
             map: i,
             title: "Fisher College",
-            icon: "img/svg/markpoint.svg"
+            icon: image
         });
 
         new google.maps.Marker({
             position: new google.maps.LatLng(42.3770068,-71.1188488,17),
             map: i,
             title: "Harvard University",
-            icon: "img/svg/markpoint.svg"
+            icon: image
         });
 
         new google.maps.Marker({
             position: new google.maps.LatLng(40.8075395,-73.9647614,17),
             map: i,
             title: "Columbia University",
-            icon: "img/svg/markpoint.svg"
+            icon: image
         });
 
         new google.maps.Marker({
             position: new google.maps.LatLng(42.3600949,-71.0963487),
             map: i,
             title: "Massachusetts Institute of Technology",
-            icon: "img/svg/markpoint.svg"
+            icon: image
         });
 
         new google.maps.Marker({
             position: new google.maps.LatLng(40.7295174,-73.9986496,17),
             map: i,
             title: "New York University",
-            icon: "img/svg/markpoint.svg"
+            icon: image
         });
     }
 }
